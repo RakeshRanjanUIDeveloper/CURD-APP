@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curd App Using HTML, CSS & Javascript</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <section class="min-height">
+        <div class="container-fluid no-padding">
+            <h2>Curd App Using HTML, CSS & Javascript</h2>
+            <div class="curd-app-container">
+                <div class="form-container">
+                    <form onsubmit="event.preventDefault(); onFormSubmit();" autocomplete="off">
+                        <div>
+                            <label>Full Name</label>
+                            <label class="validation-error hide" id="fullNameValidationError">This field is required.</label>
+                            <input type="text" name="fullName" id="fullName" />
+                        </div>
+                        <div>
+                            <label>Employee Code</label>
+                            <input type="text" name="empCode" id="empCode" />
+                        </div>
+                        <div>
+                            <label>Salary</label>
+                            <input type="text" name="salary" id="salary" />
+                        </div>
+                        <div>
+                            <label>City</label>
+                            <input type="text" name="city" id="city" />
+                        </div>
+                        <div class="form-action-buttons">
+                            <input type="submit" value="submit" />
+                        </div>
+                    </form>
+                </div>
+                <div class="table-container">
+                    <table class="list" id="employeeList">
+                        <thead>
+                            <tr>
+                                <th>Full Name</th>
+                                <th>Employee Code</th>
+                                <th>Salary</th>
+                                <th>City</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./script.js"></script>
+</body>
+</html>
